@@ -1,4 +1,5 @@
-# codeception-module-openapi
+# OpenAPI module for Codeception
+
 Module for [codeception](https://codeception.com/) to test server over OpenAPI specification
 
 ## Installation
