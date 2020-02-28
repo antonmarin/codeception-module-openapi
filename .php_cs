@@ -7,6 +7,7 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->exclude('var')
+    ->exclude('tests/_support/_generated')
     ->in(__DIR__)
 ;
 

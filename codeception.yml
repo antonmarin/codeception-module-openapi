@@ -1,4 +1,4 @@
-namespace: antonmarin\Tests
+namespace: antonmarin\CodeceptionOpenApiTests
 settings:
     shuffle: true
     lint: true

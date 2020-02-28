@@ -2,4 +2,4 @@ actor: IntegrationTester
 modules:
   enabled:
     - Asserts
-    - \antonmarin\Tests\Helper\Integration
+    - \antonmarin\CodeceptionOpenApiTests\Helper\Integration
