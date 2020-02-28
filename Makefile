@@ -1,7 +1,7 @@
 .DEFAULT_GOAL=help
 PHP_VERSION=7.1
 DEV_IMAGE_NAME="antonmarin/codeception-openapi:dev"
-CMD_DOCKER_RUN=docker run -itv $(PWD):/app -w /app $(DEV_IMAGE_NAME)
+CMD_DOCKER_RUN=docker run -iv $(PWD):/app -w /app $(DEV_IMAGE_NAME)
 
 help:
 	@printf "\
@@ -11,7 +11,7 @@ help:
 	"
 
 exec:
-	$(CMD_DOCKER_RUN) sh
+	docker run -itv $(PWD):/app -w /app $(DEV_IMAGE_NAME) sh
 
 fix-cs:
 	docker run --rm -iv $(PWD):/data/ cytopia/php-cs-fixer fix --diff --allow-risky=yes
