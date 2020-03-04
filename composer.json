@@ -10,7 +10,9 @@
         }
     ],
     "autoload-dev": {
-        "antonmarin\\CodeceptionOpenApiTests\\": "tests/"
+        "psr-4": {
+            "antonmarin\\CodeceptionOpenApiTests\\": ["tests/", "tests/_support/"]
+        }
     },
     "require": {
         "php": "^7.1",
