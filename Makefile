@@ -31,6 +31,7 @@ rebuild:
 	docker build --build-arg PHP_VERSION=$(PHP_VERSION) -t $(DEV_IMAGE_NAME) -f docker/Dockerfile .
 	$(CMD_DOCKER_RUN) rm -f composer.lock
 	$(CMD_DOCKER_RUN) composer install
+	$(CMD_DOCKER_RUN) vendor/bin/codecept build
 stan:
 	$(CMD_DOCKER_RUN) vendor/bin/phpstan analyse . -vvv
 codeception:
