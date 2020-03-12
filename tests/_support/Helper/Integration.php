@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace antonmarin\CodeceptionOpenApiTests\Helper;
 
 // here you can define custom actions

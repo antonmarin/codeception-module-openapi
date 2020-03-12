@@ -1,5 +1,5 @@
 actor: IntegrationTester
 modules:
   enabled:
-    - Asserts
+    - \antonmarin\CodeceptionOpenApi\OpenApi
     - \antonmarin\CodeceptionOpenApiTests\Helper\Integration

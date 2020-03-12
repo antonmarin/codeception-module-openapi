@@ -9,6 +9,11 @@
             "email": "antonaryo85@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "antonmarin\\CodeceptionOpenApi\\": "src/"
+        }
+    },
     "autoload-dev": {
         "psr-4": {
             "antonmarin\\CodeceptionOpenApiTests\\": ["tests/", "tests/_support/"]
@@ -19,6 +24,7 @@
         "codeception/codeception": "^3.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "^0.12"
+        "phpstan/phpstan": "^0.12",
+        "codeception/util-universalframework": "^1.0"
     }
 }

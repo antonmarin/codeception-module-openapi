@@ -14,14 +14,19 @@ $finder = PhpCsFixer\Finder::create()
 return PhpCsFixer\Config::create()
     ->setFinder($finder)
     ->setRules([
-        '@PSR1' => true,
-        '@PSR2' => true,
-        '@PhpCsFixer' => true,
+                   '@PSR1' => true,
+                   '@PSR2' => true,
+                   '@PHP70Migration' => true,
+                   '@PHP71Migration' => true,
+                   '@PhpCsFixer' => true,
 
-        'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
-        'phpdoc_align' => ['align' => 'left'],
+                   'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
+                   'phpdoc_align' => ['align' => 'left'],
 
-        // risky
-        '@PhpCsFixer:risky' => true,
-    ])
+                   // risky
+                   '@PhpCsFixer:risky' => true,
+                   '@PHP70Migration:risky' => true,
+                   '@PHP71Migration:risky' => true,
+               ]
+    )
     ->setRiskyAllowed(false);
