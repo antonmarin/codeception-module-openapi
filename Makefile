@@ -33,6 +33,6 @@ rebuild:
 	$(CMD_DOCKER_RUN) composer install
 	$(CMD_DOCKER_RUN) vendor/bin/codecept build
 stan:
-	$(CMD_DOCKER_RUN) vendor/bin/phpstan analyse . -vvv
+	$(CMD_DOCKER_RUN) vendor/bin/phpstan analyse . -vvv --no-progress
 codeception:
 	$(CMD_DOCKER_RUN) vendor/bin/codecept run
