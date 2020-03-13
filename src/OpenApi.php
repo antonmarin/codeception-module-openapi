@@ -10,7 +10,7 @@ use Codeception\Module;
 
 class OpenApi extends Module implements DependsOnModule, API
 {
-    public function _depends()
+    public function _depends(): void
     {
         // TODO: Implement _depends() method.
     }
